@@ -348,11 +348,11 @@ footer p {
     }
 
     .contact input, .contact textarea, .contact button {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .carousel-container {
-        height: 200px; /* Diminui ainda mais a altura */
+        height: 210px; /* Diminui ainda mais a altura */
     }
     
     .carousel-slide img {
