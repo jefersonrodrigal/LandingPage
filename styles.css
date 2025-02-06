@@ -384,7 +384,7 @@ footer p {
     }
 
     .contact input, .contact textarea {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     .contact button {
@@ -392,8 +392,14 @@ footer p {
         padding: 12px 25px;
     }
 
+    .social-media{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     .carousel-container {
-        height: 180px;
+        height: 135px;
     }
     
     .carousel-slide img {
