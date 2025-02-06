@@ -165,7 +165,7 @@ nav a:hover {
 }
 
 .contact .container {
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
     text-align: center;
 }
@@ -194,6 +194,69 @@ nav a:hover {
 
 .contact button:hover {
     background-color: #7f4741;
+}
+
+/* CARROLSSEL */
+.image-carousel {
+    position: relative;
+    margin-top: 30px; /* Distância do carrossel após a seção de serviços */
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f8f8; /* Cor de fundo do carrossel */
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Defina a altura do carrossel (tamanho quadrado) */
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 14%;
+    height: 100%;
+    padding: 7px;
+    object-fit: cover;
+}
+
+/* Botões de navegação */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-title {
+    text-align: center;  
+    font-size: 28px;     
+    color: #975A61;     
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;   
 }
 
 /* FOOTER */
@@ -227,6 +290,7 @@ footer p {
     transform: scale(1.2);
     filter: brightness(1.2); /* Efeito de brilho nas imagens sociais */
 }
+
 
 /* RESPONSIVIDADE */
 @media screen and (max-width: 768px) {
@@ -286,6 +350,23 @@ footer p {
     .contact input, .contact textarea, .contact button {
         font-size: 1rem;
     }
+
+    .carousel-container {
+        height: 200px; /* Diminui ainda mais a altura */
+    }
+    
+    .carousel-slide img {
+        width: 25%; /* Deixa as imagens maiores */
+    }
+
+    .prev, .next {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .carousel-title {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -309,5 +390,23 @@ footer p {
     .contact button {
         font-size: 1.1rem;
         padding: 12px 25px;
+    }
+
+    .carousel-container {
+        height: 180px;
+    }
+    
+    .carousel-slide img {
+        width: 33%; /* Apenas 3 imagens por vez na tela */
+        padding: 5px;
+    }
+
+    .prev, .next {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .carousel-title {
+        font-size: 20px;
     }
 }
