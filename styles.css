@@ -196,68 +196,49 @@ nav a:hover {
     background-color: #7f4741;
 }
 
-/* CARROLSSEL */
-.image-carousel {
-    position: relative;
-    margin-top: 30px; /* Distância do carrossel após a seção de serviços */
-    width: 100%;
-    overflow: hidden;
-    background-color: #f8f8f8; /* Cor de fundo do carrossel */
-}
-
-.carousel-container {
-    position: relative;
-    width: 100%;
-    height: 300px; /* Defina a altura do carrossel (tamanho quadrado) */
-    overflow: hidden;
-}
-
-.carousel-slide {
+/* GALERY */
+.image-grid {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centraliza os cartões no centro */
+    margin: 20px 0;
 }
 
-.carousel-slide img {
-    width: 14%;
+.image-card {
+    width: 200px;
+    height: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card img {
+    width: 100%;
     height: 100%;
-    padding: 7px;
     object-fit: cover;
 }
 
-/* Botões de navegação */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    z-index: 100;
-    font-size: 24px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    padding: 16px;
-    cursor: pointer;
-    transform: translateY(-50%);
+.image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.carousel-title {
-    text-align: center;  
-    font-size: 28px;     
-    color: #975A61;     
+/* Centralizando o título */
+.gallery-title {
+    text-align: center; /* Centraliza o texto */
+    font-size: 32px;
+    color: #333;
+    padding-top: 50px;
     margin-bottom: 20px;
-    margin-top: 20px;
-    font-weight: bold;   
 }
+
 
 /* FOOTER */
 footer {
